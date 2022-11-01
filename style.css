@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/*リセットCSS*/
+*{
+  margin:0;
+  padding:0;
+
+  box-sizing:border-box;
+}
+
+/*ヘッダー*/
+header{
+  min-width:960px;
+  width:100%;
+  height:50px;
+
+  background-color:#ff9a4b;
+}
+
+/*メイン*/
+main{
+  width:100%;
+}
+
+.main-step{
+  width:960px;
+  margin:0 auto;
+  padding:50px 0;
+
+  display:flex;
+  justify-content:center;
+}
+
+.step{
+  width:300px;
+  padding:10px;
+
+  background-color:#eee;
+
+  position:relative;
+}
+
+.step:nth-child(even){
+  margin:0 30px;
+}
+
+.step-image{
+  width:100%;
+  height:150px;
+}
+
+.step-content{
+  width:100%;
+}
+
+.step-heading{
+  padding-top:15px;
+}
+
+.step-text{
+  padding-top:5px;
+}
+
+.step-n{
+  color:#fff;
+
+  background-color:#ff9a4b;
+
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+/*フッター*/
+footer{
+  min-width:960px;
+  width:100%;
+  height:50px;
+
+  background-color:#aaa;
+}
+
+/*メディアクエリ*/
+@media screen and (max-width:768px){
+
+  /*ヘッダー(768px以下)*/
+  header{
+    min-width:100%;
+    width:100%;
+  }
+
+  /*メイン(768px以下)*/
+  main{
+    width:100%;
+  }
+
+  .main-step{
+    width:90%;
+
+    display:block;
+  }
+
+  .step{
+    width:100%;
+  }
+
+  .step:nth-child(even){
+    margin:20px 0;
+  }
+
+  /*フッター(768px以下)*/
+  footer{
+    min-width:100%;
+    width:100%;
+  }
+
+}
